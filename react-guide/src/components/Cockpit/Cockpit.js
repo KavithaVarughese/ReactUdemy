@@ -2,20 +2,6 @@ import React from 'react';
 import classes from './Cockpit.css'
 
 const cockpit = (props) => {
-    
-
-    const style = {
-        backgroundColor: 'green',
-        color: 'white',
-        font: 'inherit',
-        border: '1px solid blue',
-        padding:'8px',
-        cursor: 'pointer',  
-        ':hover': {
-        backgroundColor:'lightgreen',
-        color:'black',
-        }
-    };
 
     const assignedClasses = [];
 
@@ -34,7 +20,7 @@ const cockpit = (props) => {
 
     return(
         <div className={classes.Cockpit}>
-            <h1>Hi, I am a React App</h1>
+            <h1>{props.title}</h1>
             <p className={assignedClasses.join(' ')}>This is really working!</p>
             <button 
             className={btnClass}
